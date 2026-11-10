@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Employee {
     private String id;
     private String name;
@@ -77,4 +80,5 @@ public class Employee {
         return String.format("Employee [%d]: %s (%s) | Hours: %.1f | Total Pay: $%.2f",
                 id, name, department, hoursWorked, getTotalPay());
     }
+
 }
